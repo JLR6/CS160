@@ -1,0 +1,26 @@
+Question 1
+Synchonizer: Eric G.
+Liason: Shireen
+Reflector: Jenny R.
+
+
+Question 2.2 
+2.2.1 
+(type yes or no) - Yes
+2.2.2
+(type your answer here) - Because the Electric car object says make and model unassigned while the Car object has the make and model of dodge dart. This shows up when I only run the code from ElectricCar.py.
+2.2.3 
+(Type your answers here ) - Import statements will import all methods including the main method from the parent class, for example, the print statements in Car.py (they are not in a if __name__=="__main__" block).
+
+Question 2.3
+2.3.1
+(yes or no) - No
+2.3.2
+(yes or no) - Yes
+2.3.3
+(type your answer here) - The code defined within the if __name__=="__main__" block will only be executed when that condition is met, in other words, that code will only execute if it is in the file called "__main__". When the parent class is inherited, it is no longer called "__main__" and instead is the name of the file, therefore, that condition will be false and not be run.
+2.3.4
+(type your answer here) - The value of __name__ when running the file will be "__main__", whereas, when you import that file, it will not be "__main__" which is why the code in the if __name__=="__main__" block will not be executed (see answer to 2.3.3).
+
+Question 3.1 
+(type your answer here) - This code fails to run because the get_make_model() is not defined in the class ElectricCar. Without the constructor that calls the constructor of the parent [super().__init__()], the Car object is never constructed and therefore, the child class cannot take the attributes of the parent.
