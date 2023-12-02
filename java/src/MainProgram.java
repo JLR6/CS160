@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class MainProgram {
     public static void main(String[] args) throws Exception {
+        // tester();
         FleetOfCars f = new FleetOfCars();
         boolean running = true;
         Scanner obj = new Scanner(System.in);
@@ -282,4 +283,16 @@ public class MainProgram {
           return false;  
         }  
       }
+
+    public static void tester(){
+        FleetOfCars fleet = new FleetOfCars();
+        fleet.add(new Car("dodge", 5, 4));
+        fleet.add(new ElectricCar("electric dodge", 0, 0, 6));
+        fleet.add(new GasolineCar("gas dodge", 5,4,7.0));
+        System.out.println(fleet);
+        fleet.delete(1);
+        System.out.println(fleet);
+
+
+    }
 }
