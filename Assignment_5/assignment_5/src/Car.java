@@ -34,5 +34,8 @@ public class Car{
     public void setPricePerDay(double pricePerDay) {
         this.pricePerDay = (float)pricePerDay;
     }
+    public String toString(){
+        return "Id: " + this.id; 
+    }
 
 }
